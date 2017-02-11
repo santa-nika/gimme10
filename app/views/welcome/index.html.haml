@@ -1,0 +1,21 @@
+%h4="Type:"
+
+:css
+  / .before::before, .after::after {
+  /   content: "\A";
+  /   white-space: pre;
+  / }
+  / .line_split span { display:block; }
+  / .line1 span {
+  /   content: "\A";
+  /   white-space: pre;
+  / }
+  / .line2 span {
+  /   content: "\A";
+  /   white-space: pre;
+  / }
+
+%h1
+  %div.line_split{ id: 'to-type', style: 'color:grey;' }="<p class='line1'>whatever text</p><p class='line2'>you want</p>".html_safe
+
+
